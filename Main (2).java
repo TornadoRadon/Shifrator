@@ -12,15 +12,14 @@ public class Main {
         String shifrlangan = encode(str);
         System.out.println(shifrlangan);
 
-//        String deshifrlangan = decode(str);
-//        System.out.println(deshifrlangan);
+		System.out.println(decode(str));
 
 
     }
 
     public static String encode(String str){
-        char[] charArr = str.toCharArray();//H E L L O W O R L D
-        String[] strArr = new String[charArr.length];//RR GE RS RS AA
+        char[] charArr = str.toCharArray();
+        String[] strArr = new String[charArr.length];
         for (int i = 0 ; i < charArr.length; i++){
             if (charArr[i] == ' '){
                 strArr[i] = " ";
@@ -42,7 +41,7 @@ public class Main {
         return (char) (key.charAt((x - 65) % key.length()));
     }
 
-
+	//todo deshifratsiyani tugatish kerak
     public static String decode(String str){
 
         return str;
